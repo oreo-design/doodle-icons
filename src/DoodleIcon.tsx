@@ -25,8 +25,10 @@ export type DoodleIconProps = Omit<SVGProps<SVGSVGElement>, 'name'> & {
  *   <BoilFilter id="boil" />
  *   <DoodleIcon name="heart" boilId="boil" draw />
  *
- * Both effects are opt-in. An icon that wiggled by default would be a menace
- * inside a form, and the entrance would replay every time React remounts it.
+ * Both are props rather than defaults: the package cannot tell an icon apart
+ * from a control, and `draw` replays on every remount. On a page built with
+ * this set, pass `boilId` on every icon — the drawings are meant to be alive.
+ * Keep `draw` for things that mount once, like a hero or an empty state.
  */
 export function DoodleIcon({
   name,

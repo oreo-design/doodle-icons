@@ -1,6 +1,6 @@
 {
   "name": "@oreo-design/doodle-icons",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "152 hand-drawn icons that never sit still — every stroke draws itself, then keeps boiling like a Saturday-morning cartoon.",
   "license": "MIT",
   "author": "Nicole Tang",
@@ -44,9 +44,10 @@
   ],
   "scripts": {
     "build:svg": "node --experimental-strip-types scripts/build-svgs.mjs",
-    "build": "npm run build:svg && npm run build:preview && tsup",
+    "build": "npm run build:svg && npm run build:preview && npm run build:skill && tsup",
     "prepublishOnly": "npm run build",
-    "build:preview": "node --experimental-strip-types scripts/build-preview.mjs"
+    "build:preview": "node --experimental-strip-types scripts/build-preview.mjs",
+    "build:skill": "node --experimental-strip-types scripts/build-skill-names.mjs"
   },
   "peerDependencies": {
     "react": ">=18"

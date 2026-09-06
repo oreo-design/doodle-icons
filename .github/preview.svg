@@ -10,7 +10,11 @@
       animation-fill-mode: backwards;
     }
     @keyframes draw {
-      from { stroke-dasharray: 1; stroke-dashoffset: 1 }
+      /* hidden only in the from-frame: fill-mode backwards makes that cover the
+         delay, so a staggered row never sits showing the dot a round line-cap
+         paints at dashoffset 1 */
+      from { stroke-dasharray: 1; stroke-dashoffset: 1; visibility: hidden }
+      1% { visibility: visible }
       to { stroke-dasharray: 1; stroke-dashoffset: 0 }
     }
     @media (prefers-reduced-motion: reduce) {

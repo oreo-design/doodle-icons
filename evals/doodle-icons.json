@@ -12,8 +12,8 @@
         "Hero icons use both boilId and draw, and are staggered with drawDelay",
         "Schoolbell is loaded via next/font/google and applied to the hero title",
         "No import from lucide-react, @heroicons, react-icons, or any other icon library",
-        "Hero icon sizes are 32 or 48, not the 24 default and nothing under 20",
-        "Page uses the paper background #F7F6F2 and ink #2b2a33 (or exact Tailwind equivalents)"
+        "Hero icons are sized to the headline (roughly 80-120px, via size prop or CSS width), not left at the 24 default",
+        "Page uses the real Oreo tokens: warm paper #f7f6f1 surfaces and ink #2b2a33, no framework accent hue"
       ]
     },
     {
@@ -22,7 +22,7 @@
       "expected_output": "Rows use still icons: no boilId and no draw on list/row icons, because UI chrome should hold still and draw would replay on re-render. size 24. Real names such as gear, bell, lock, shield, eye, user. Colour via CSS color/className, not stroke props. Does not re-mount BoilFilter. Optionally one boiling icon in the page header at most.",
       "files": [],
       "assertions": [
-        "Row and list icons have no boilId and no draw; at most a title or section-header icon may move",
+        "Every icon carries boilId (rows included); draw is kept off list rows so it does not replay on re-render",
         "BoilFilter is not mounted again anywhere in the output",
         "Every icon name used exists in the package's 152-icon set",
         "Row icons are size 24 or use the default size",

@@ -39,15 +39,18 @@ export default function App() {
       {/* draws itself on, then wiggles forever */}
       <DoodleIcon name="star" boilId="boil" draw size={32} />
 
-      {/* leave both off and the icon holds still */}
-      <DoodleIcon name="check" size={32} />
+      {/* put the same filter on Schoolbell headings — they wiggle too */}
+      <h1 style={{ filter: 'url(#boil)' }} className="font-doodle">Paper Moon</h1>
     </>
   )
 }
 ```
 
-Both effects are opt-in. An icon that wiggled by default would be a menace
-inside a form, so nothing moves until you ask it to.
+Both are props rather than defaults — the package cannot tell an icon apart
+from a control. On a page built with this set, **pass `boilId` on every
+icon**, and put the same filter on your Schoolbell headings; handwriting that
+sits still next to boiling icons looks half-done. Keep `draw` for things that
+mount once, like a hero, since it replays on every remount.
 
 Strokes are `currentColor`, so colour comes from CSS like any other text:
 
@@ -65,7 +68,7 @@ Strokes are `currentColor`, so colour comes from CSS like any other text:
 | `icon` | — | pass icon data directly instead of `name` |
 | `size` | `24` | px, both axes |
 | `strokeWidth` | `3.4` | the set is drawn for a chunky stroke |
-| `boilId` | — | id of a mounted `<BoilFilter>`; omit to hold still |
+| `boilId` | — | id of a mounted `<BoilFilter>`; pass it on every icon |
 | `draw` | `false` | draw the strokes on, one after another, on first render |
 | `drawDuration` | `0.32` | seconds per stroke |
 | `drawDelay` | `0` | seconds before the first stroke starts — stagger a row with it |
@@ -149,8 +152,10 @@ interface, files, text, arrows — see `COLLECTIONS`.
 
 The repo ships a skill at [`skills/doodle-icons/SKILL.md`](skills/doodle-icons/SKILL.md)
 that teaches an agent the one-time setup, every icon name, and the house
-rules — Schoolbell pairing, paper-and-ink palette, where to let icons wiggle
-and where to hold them still. Install it into whichever agents you use:
+rules — Schoolbell pairing, paper-and-ink palette, the fact that every icon
+and every hand-drawn heading wiggles while controls hold still, and how to
+draw a control by hand instead of reaching for a stock one. Install it into
+whichever agents you use:
 
 ```bash
 npx skills add oreo-design/doodle-icons

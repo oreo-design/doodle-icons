@@ -10,10 +10,17 @@ import { BOIL } from './boil'
 export function DoodleStyles() {
   return (
     <style
-      // one rule, no selectors of our own: nothing here can leak into your CSS
+      // One rule, no selectors of our own: nothing here can leak into your CSS.
+      // `visibility:hidden` only in the from-frame: with fill-mode backwards it
+      // covers the delay, so a staggered row does not sit there showing the dot a
+      // round line-cap paints at dashoffset 1. Base CSS still has no dash at all,
+      // so an icon whose animation never runs is simply drawn.
       dangerouslySetInnerHTML={{
         __html:
-          '@keyframes doodle-draw{from{stroke-dasharray:1;stroke-dashoffset:1}to{stroke-dasharray:1;stroke-dashoffset:0}}' +
+          '@keyframes doodle-draw{'+
+            'from{stroke-dasharray:1;stroke-dashoffset:1;visibility:hidden}'+
+            '1%{visibility:visible}'+
+            'to{stroke-dasharray:1;stroke-dashoffset:0}}' +
           '@media (prefers-reduced-motion:reduce){' +
           '[style*="doodle-draw"]{animation:none!important}}',
       }}
