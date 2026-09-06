@@ -1,0 +1,17 @@
+{
+  "name": "oreo-design",
+  "owner": {
+    "name": "Nicole Tang",
+    "url": "https://oreoui.com"
+  },
+  "plugins": [
+    {
+      "name": "doodle-icons",
+      "source": "./",
+      "description": "Hand-drawn icons that draw themselves in and keep boiling. Install, the one shared BoilFilter, real icon names, and the Oreo Design house rules."
+    }
+  ],
+  "metadata": {
+    "description": "Oreo Design plugins: hand-drawn Doodle Icons today, more of the Oreo UI system as it ships."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "skill_name": "doodle-icons",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I have a Next.js 15 app (App Router, Tailwind). Add a hero section for my indie zine \"Paper Moon\" with a hand-drawn vibe: a big title, one line of copy, and three or four wiggly doodle icons that draw themselves in when the page loads. Use @oreo-design/doodle-icons. Put the files in app/page.tsx and whatever else you need.",
+      "expected_output": "Working Next.js code: BoilFilter mounted once in app/layout.tsx (not in page or per icon); DoodleIcon with boilId and draw, staggered via drawDelay; only real icon names from the set; Schoolbell wired via next/font/google onto the title with a CSS variable; paper #F7F6F2 background and ink #2b2a33; sizes 32/48; nothing from Lucide or another icon set; nothing about the nav wiggling.",
+      "files": [],
+      "assertions": [
+        "BoilFilter is mounted exactly once, in app/layout.tsx, not in page.tsx and not once per icon",
+        "Every DoodleIcon name used exists in the package's 152-icon set",
+        "Hero icons use both boilId and draw, and are staggered with drawDelay",
+        "Schoolbell is loaded via next/font/google and applied to the hero title",
+        "No import from lucide-react, @heroicons, react-icons, or any other icon library",
+        "Hero icon sizes are 32 or 48, not the 24 default and nothing under 20",
+        "Page uses the paper background #F7F6F2 and ink #2b2a33 (or exact Tailwind equivalents)"
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Build me a settings page in React with three sections: General, Notifications, Privacy. Each row has a small icon on the left, a label, and a toggle on the right. Use the oreo doodle icons so it matches the rest of my app (we already have @oreo-design/doodle-icons installed and a <BoilFilter id=\"boil\" /> in the layout).",
+      "expected_output": "Rows use still icons: no boilId and no draw on list/row icons, because UI chrome should hold still and draw would replay on re-render. size 24. Real names such as gear, bell, lock, shield, eye, user. Colour via CSS color/className, not stroke props. Does not re-mount BoilFilter. Optionally one boiling icon in the page header at most.",
+      "files": [],
+      "assertions": [
+        "Row and list icons have no boilId and no draw; at most a title or section-header icon may move",
+        "BoilFilter is not mounted again anywhere in the output",
+        "Every icon name used exists in the package's 152-icon set",
+        "Row icons are size 24 or use the default size",
+        "Any icon colour is set via className or CSS color, not a stroke attribute or edited paths",
+        "No import from another icon library"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "my portfolio is plain html + css, no react no build step. i want a footer with a mail icon, a github icon and an X (twitter) icon in that sketchy wobbly style from oreoui.com/doodle-icons. how do i do it? give me the actual html",
+      "expected_output": "Uses the standalone SVG files from the package (icons-animated/*.svg or icons/*.svg) via <img> or inline markup, no React. States plainly that there are no GitHub or X logos in the set and does not fabricate them or pull logos from another icon set; offers link / external-link / at-sign / mail / send with text labels instead. Mentions the <img> currentColor limitation and the inline-fetch alternative if recolouring is wanted. Optionally the Schoolbell <link> for footer display text.",
+      "files": [],
+      "assertions": [
+        "Output is plain HTML and CSS with no React, JSX, or build tooling",
+        "Uses the package's standalone SVG files (icons/ or icons-animated/) or their inline markup",
+        "States explicitly that GitHub and X logos are not in the set, and does not fabricate them or pull logos from another icon set",
+        "Substitutes real names from the set (e.g. mail with link, external-link, at-sign or send) paired with text labels",
+        "Mentions that an <img>-loaded SVG cannot inherit currentColor, or inlines the SVG so it can be recoloured",
+        "No SVG path data is invented for any icon"
+      ]
+    }
+  ]
+}

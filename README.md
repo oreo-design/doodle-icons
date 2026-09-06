@@ -145,6 +145,33 @@ getIcon('heart')  // { name: 'heart', paths: ['M 24 39 C …'] }
 Icons are grouped into shelves — objects, communication, weather, media,
 interface, files, text, arrows — see `COLLECTIONS`.
 
+## Using with an AI coding agent
+
+The repo ships a skill at [`skills/doodle-icons/SKILL.md`](skills/doodle-icons/SKILL.md)
+that teaches an agent the one-time setup, every icon name, and the house
+rules — Schoolbell pairing, paper-and-ink palette, where to let icons wiggle
+and where to hold them still. Install it into whichever agents you use:
+
+```bash
+npx skills add oreo-design/doodle-icons
+```
+
+That works for Claude Code, Cursor, Codex, OpenCode and most others. In
+Claude Code you can also install it as a plugin:
+
+```text
+/plugin marketplace add oreo-design/doodle-icons
+/plugin install doodle-icons@oreo-design
+```
+
+Or, since the skill is inside the npm package, just copy it:
+
+```bash
+cp -r node_modules/@oreo-design/doodle-icons/skills/doodle-icons .claude/skills/
+```
+
+Then ask for "hand-drawn icons" and it will do the right thing.
+
 ## Pro
 
 A larger set with the same hand is in the works. It lives behind

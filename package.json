@@ -7,9 +7,9 @@
   "homepage": "https://oreoui.com/doodle-icons",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicoletangnan/doodle-icons.git"
+    "url": "git+https://github.com/oreo-design/doodle-icons.git"
   },
-  "bugs": "https://github.com/nicoletangnan/doodle-icons/issues",
+  "bugs": "https://github.com/oreo-design/doodle-icons/issues",
   "keywords": [
     "icons",
     "svg-icons",
@@ -39,7 +39,8 @@
   "files": [
     "dist",
     "icons",
-    "icons-animated"
+    "icons-animated",
+    "skills/doodle-icons/SKILL.md"
   ],
   "scripts": {
     "build:svg": "node --experimental-strip-types scripts/build-svgs.mjs",
