@@ -5,7 +5,7 @@ description: How to add and correctly use Doodle Icons (@oreo-design/doodle-icon
 
 # Doodle Icons
 
-191 stroke-only icons drawn with a deliberately shaky hand, in a 48×48 grid.
+197 stroke-only icons drawn with a deliberately shaky hand, in a 48×48 grid.
 Two things make them feel alive. Both are props rather than defaults, because
 the package cannot know which element on your page is an icon and which is a
 control — but on a page built with this set, **every icon should carry
@@ -67,7 +67,7 @@ import { DoodleIcon } from '@oreo-design/doodle-icons'
 
 | Prop | Default | Notes |
 | --- | --- | --- |
-| `name` | — | one of the 191 names below. Unknown name renders **nothing** (returns null), silently |
+| `name` | — | one of the 197 names below. Unknown name renders **nothing** (returns null), silently |
 | `icon` | — | pass `getIcon('heart')` data directly instead of `name` |
 | `size` | `24` | px, both axes. Scale it to the text beside it (see sizes) |
 | `strokeWidth` | `3.4` | the set is drawn for this. Leave it |
@@ -372,7 +372,7 @@ global styles:
 ## Picking an icon
 
 <!-- ROSTER:START -->
-### The 191 names, by shelf
+### The 197 names, by shelf
 
 **Home & objects** — home, map, map-pin, pin, calendar, cart, gear, bulb,
 lock, lock-open, key, shield, shield-check, trash, flask, puzzle, diamond,
@@ -421,6 +421,8 @@ gift-bag
 
 **Stars & sparkles** — stars, shooting-star, moon-stars, star-medal,
 sparkle-heart
+
+**Animals** — cat, dog, fish, bird, rabbit, paw-print
 
 `COLLECTIONS` exports the same grouping as data (`{ id, label, names }`).
 
@@ -474,7 +476,7 @@ are no brand logos in this set (see below).
 There is no clock or time, no loading spinner, no currency sign, no wifi /
 battery / bluetooth, no social or brand logos (X, GitHub, Instagram…), no
 user-plus, no dashboard, no shopping bag, no truck, no calendar-with-event
-variants. The free set is 191 icons and grows with each release.
+variants. The free set is 197 icons and grows with each release.
 
 When the icon you want is not here, **use a word or leave the slot empty**.
 Do not draw a new path to match, do not borrow one icon from another set, and

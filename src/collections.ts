@@ -272,4 +272,16 @@ export const COLLECTIONS: Collection[] = [
       "sparkle-heart"
     ],
   },
+  {
+    id: "animals",
+    label: "Animals",
+    names: [
+      "cat",
+      "dog",
+      "fish",
+      "bird",
+      "rabbit",
+      "paw-print"
+    ],
+  },
 ]
