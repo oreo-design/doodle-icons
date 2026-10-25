@@ -5,8 +5,8 @@
  *   .github/preview-static.svg   one still frame, for anywhere animation is stripped
  *
  * One filter covers the whole sheet rather than one per icon: the displacement
- * is computed once over the full area, so 152 boiling icons cost about what
- * one does.
+ * is computed once over the full area, so a whole sheet of boiling icons
+ * costs about what one does.
  */
 import { mkdirSync, writeFileSync } from 'node:fs'
 import { svgPathProperties } from 'svg-path-properties'
@@ -57,7 +57,7 @@ ${stillCells}
 /* ---------- animated ---------- */
 
 // The sheet fills in left to right, one icon after the next, the way you would
-// actually draw it. 152 icons at this cadence lands just under four seconds.
+// actually draw it. At this cadence each icon starts ~24ms after the last.
 const ICON_STAGGER = 0.024
 
 const animCells = ICONS.map((icon, i) => {

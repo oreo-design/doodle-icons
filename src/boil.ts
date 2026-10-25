@@ -1,7 +1,7 @@
 /**
  * The one place the boil is tuned.
  *
- * These are the values oreoui.com/doodle-icons runs at — the site is the
+ * These are the values doodle.oreoui.com runs at — the site is the
  * reference for how the set is supposed to feel, and the package, the
  * standalone SVG files and the README sheet all read from here so they cannot
  * drift apart again.

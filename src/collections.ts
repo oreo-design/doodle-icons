@@ -25,7 +25,8 @@ export const COLLECTIONS: Collection[] = [
       "puzzle",
       "diamond",
       "cube",
-      "gauge"
+      "gauge",
+      "car"
     ],
   },
   {
@@ -59,7 +60,17 @@ export const COLLECTIONS: Collection[] = [
       "fire",
       "bolt",
       "umbrella",
-      "moon"
+      "moon",
+      "snowflake",
+      "tree-pine",
+      "flower",
+      "tulip",
+      "sunflower",
+      "daisy",
+      "rose",
+      "cherry-blossom",
+      "potted-plant",
+      "butterfly"
     ],
   },
   {
@@ -201,6 +212,64 @@ export const COLLECTIONS: Collection[] = [
       "log-out",
       "external-link",
       "send"
+    ],
+  },
+  {
+    id: "halloween",
+    label: "Halloween",
+    names: [
+      "pumpkin",
+      "jack-o-lantern",
+      "ghost",
+      "skull",
+      "bat",
+      "spider",
+      "witch-hat"
+    ],
+  },
+  {
+    id: "christmas",
+    label: "Christmas",
+    names: [
+      "christmas-ornament",
+      "snowman",
+      "santa-hat",
+      "gingerbread-man",
+      "candy-cane"
+    ],
+  },
+  {
+    id: "birthday",
+    label: "Birthday",
+    names: [
+      "party-hat",
+      "cupcake",
+      "birthday-candle",
+      "balloons",
+      "confetti",
+      "gift-bag"
+    ],
+  },
+  {
+    id: "love",
+    label: "Love",
+    names: [
+      "hearts",
+      "heart-arrow",
+      "love-letter",
+      "ring",
+      "love-lock"
+    ],
+  },
+  {
+    id: "stars",
+    label: "Stars & sparkles",
+    names: [
+      "stars",
+      "shooting-star",
+      "moon-stars",
+      "star-medal",
+      "sparkle-heart"
     ],
   },
 ]

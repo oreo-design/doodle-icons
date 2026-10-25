@@ -3,7 +3,7 @@
   "description": "Hand-drawn icons that draw themselves in and keep boiling. Teaches the agent to install @oreo-design/doodle-icons, mount the one shared BoilFilter, pick real icon names, and follow the Oreo Design house rules: Schoolbell pairing, paper-and-ink palette, where to wiggle and where to hold still.",
   "version": "0.1.0",
   "author": { "name": "Nicole Tang", "url": "https://x.com/oreo_design" },
-  "homepage": "https://oreoui.com/doodle-icons",
+  "homepage": "https://doodle.oreoui.com",
   "repository": "https://github.com/oreo-design/doodle-icons",
   "license": "MIT",
   "keywords": ["icons", "hand-drawn", "doodle", "svg", "react", "design-system", "oreo-design"]

@@ -1,14 +1,14 @@
 <div align="center">
 
-# Doodle Icons ✏️
+# Oreo Doodle Icons ✏️
 
-**152 hand-drawn icons that never sit still.**
+**191 hand-drawn icons that never sit still.**
 
 Every stroke draws itself in, then keeps boiling like a Saturday-morning cartoon.
 
-[**Play with them →** oreoui.com/doodle-icons](https://oreoui.com/doodle-icons)
+[**Play with them →** doodle.oreoui.com](https://doodle.oreoui.com)
 
-![Doodle Icons](.github/preview.svg)
+![Oreo Doodle Icons](.github/preview.svg)
 
 </div>
 
@@ -85,7 +85,7 @@ Anything else is forwarded to the `<svg>`.
 | `frequency` | `0.055` | grain of the noise; higher is a finer, more jittery hand |
 | `frames` | `6` | how many hand-drawn frames the loop pretends to have |
 
-The defaults are the values [oreoui.com/doodle-icons](https://oreoui.com/doodle-icons)
+The defaults are the values [doodle.oreoui.com](https://doodle.oreoui.com)
 runs at, so what you install feels like what you played with. They are also
 exported as `BOIL` if you want to build on them.
 
@@ -139,14 +139,26 @@ getIcon('heart')  // { name: 'heart', paths: ['M 24 39 C …'] }
 
 ## What's here
 
-- **152 icons**, stroke-only, in a 48×48 grid, drawn with a deliberately
+- **191 icons**, stroke-only, in a 48×48 grid, drawn with a deliberately
   shaky hand. A new batch lands roughly every week
 - **Two SVG builds** — still, and one that draws itself in and boils forever
 - **React components** with tree-shaking, ESM + CJS + types
 - **Zero runtime dependencies**. React is an optional peer
 
-Icons are grouped into shelves — objects, communication, weather, media,
-interface, files, text, arrows — see `COLLECTIONS`.
+Icons are grouped into shelves — objects, communication, weather & nature,
+media, interface, files, text, arrows, plus Halloween, Christmas, birthday,
+love and stars — see `COLLECTIONS`.
+
+### Themed sets
+
+The newer icons come in small seasonal and themed sets, each with its own page
+on the site:
+[Halloween](https://doodle.oreoui.com/halloween-icons) ·
+[Christmas](https://doodle.oreoui.com/christmas-icons) ·
+[birthday](https://doodle.oreoui.com/birthday-icons) ·
+[hearts](https://doodle.oreoui.com/heart-icons) ·
+[stars](https://doodle.oreoui.com/star-icons) ·
+[flowers](https://doodle.oreoui.com/flower-icons)
 
 ## Using with an AI coding agent
 
@@ -179,9 +191,9 @@ Then ask for "hand-drawn icons" and it will do the right thing.
 
 ## Pro
 
-A larger set with the same hand is in the works. It lives behind
-[oreoui.com/doodle-icons](https://oreoui.com/doodle-icons) — everything in
-*this* repo stays free and MIT forever.
+A larger set by the same hand — 1,700+ more icons — is Pro. It lives at
+[doodle.oreoui.com](https://doodle.oreoui.com) — everything in *this* repo
+stays free and MIT forever.
 
 ## A note on the typeface
 

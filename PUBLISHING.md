@@ -16,7 +16,7 @@ README contact sheets and `dist/` before the tarball is built, so what ships
 is always rebuilt from `src/icons.ts` rather than from whatever happens to be
 sitting on disk.
 
-Expect roughly: **311 files, ~73 kB packed**. To see exactly what would go out
+Expect roughly: **390 files, ~130 kB packed**. To see exactly what would go out
 without sending anything:
 
 ```bash
@@ -61,7 +61,7 @@ installing the package get the finished thing, not the workshop.
 ## The one number that matters
 
 `src/boil.ts` holds the tuning the whole set is drawn for — amplitude,
-duration, stroke width. The React component, the 152 standalone SVG files and
+duration, stroke width. The React component, the standalone SVG files and
 the README contact sheets all read from it, so changing it there moves
 everything at once. Change it anywhere else and the set drifts out of sync
-with oreoui.com/doodle-icons.
+with doodle.oreoui.com.

@@ -1,11 +1,11 @@
 ---
 name: doodle-icons
-description: How to add and correctly use Doodle Icons (@oreo-design/doodle-icons), the hand-drawn icon set from Oreo Design where every stroke draws itself in and then keeps "boiling" like a Saturday-morning cartoon. Use this whenever the user wants hand-drawn, sketchy, doodle, wobbly, wiggly, boiling, or cartoon-style icons; mentions Oreo Design, Oreo UI, oreoui.com/doodle-icons, DoodleIcon or BoilFilter; asks for a playful / handmade / zine / indie / crayon feel for a page; or is already using this package and needs to add, wire, restyle, or pick icons. Also use it when the user pastes the oreoui.com/doodle-icons site as a visual reference, even if they never say the word "icon". It covers install, the one-time BoilFilter setup, picking real icon names (and what to do when an icon does not exist), the house design rules (Schoolbell pairing, paper/ink palette, and the fact that every icon and every hand-drawn heading wiggles while controls hold still), and the no-framework path.
+description: How to add and correctly use Doodle Icons (@oreo-design/doodle-icons), the hand-drawn icon set from Oreo Design where every stroke draws itself in and then keeps "boiling" like a Saturday-morning cartoon. Use this whenever the user wants hand-drawn, sketchy, doodle, wobbly, wiggly, boiling, or cartoon-style icons; mentions Oreo Design, Oreo UI, doodle.oreoui.com, DoodleIcon or BoilFilter; asks for a playful / handmade / zine / indie / crayon feel for a page; or is already using this package and needs to add, wire, restyle, or pick icons. Also use it when the user pastes the doodle.oreoui.com site as a visual reference, even if they never say the word "icon". It covers install, the one-time BoilFilter setup, picking real icon names (and what to do when an icon does not exist), the house design rules (Schoolbell pairing, paper/ink palette, and the fact that every icon and every hand-drawn heading wiggles while controls hold still), and the no-framework path.
 ---
 
 # Doodle Icons
 
-152 stroke-only icons drawn with a deliberately shaky hand, in a 48×48 grid.
+191 stroke-only icons drawn with a deliberately shaky hand, in a 48×48 grid.
 Two things make them feel alive. Both are props rather than defaults, because
 the package cannot know which element on your page is an icon and which is a
 control — but on a page built with this set, **every icon should carry
@@ -21,7 +21,7 @@ The set is designed to look like **one hand drew everything**. Most of the
 rules below exist to protect that: same stroke weight everywhere, same ink,
 one tuning for the wobble, and no icons from other sets mixed in.
 
-Reference for how it should look and feel: https://oreoui.com/doodle-icons
+Reference for how it should look and feel: https://doodle.oreoui.com
 
 ## Install and wire up (once)
 
@@ -67,7 +67,7 @@ import { DoodleIcon } from '@oreo-design/doodle-icons'
 
 | Prop | Default | Notes |
 | --- | --- | --- |
-| `name` | — | one of the 152 names below. Unknown name renders **nothing** (returns null), silently |
+| `name` | — | one of the 191 names below. Unknown name renders **nothing** (returns null), silently |
 | `icon` | — | pass `getIcon('heart')` data directly instead of `name` |
 | `size` | `24` | px, both axes. Scale it to the text beside it (see sizes) |
 | `strokeWidth` | `3.4` | the set is drawn for this. Leave it |
@@ -118,7 +118,7 @@ the UI came from somewhere else. One shared filter means the cost is flat, so
 there is no performance reason to hold back either.
 
 **Display type wiggles too.** This is the piece most people miss. On
-oreoui.com every Schoolbell heading carries the same filter as the icons —
+doodle.oreoui.com every Schoolbell heading carries the same filter as the icons —
 the h1, the section headings, the button labels. Handwriting that sits
 perfectly still next to boiling icons is the single fastest way to make a page
 look half-done.
@@ -346,7 +346,7 @@ import { BOIL, STROKE } from '@oreo-design/doodle-icons'
 // STROKE = { width: 3.4, linecap: 'round', linejoin: 'round' }
 ```
 
-These are the values oreoui.com runs at. `<BoilFilter>` defaults to them, so
+These are the values doodle.oreoui.com runs at. `<BoilFilter>` defaults to them, so
 you rarely touch them. If a design calls for a second intensity, mount a
 second filter with its own id rather than changing the default:
 
@@ -372,17 +372,18 @@ global styles:
 ## Picking an icon
 
 <!-- ROSTER:START -->
-### The 152 names, by shelf
+### The 191 names, by shelf
 
 **Home & objects** — home, map, map-pin, pin, calendar, cart, gear, bulb,
 lock, lock-open, key, shield, shield-check, trash, flask, puzzle, diamond,
-cube, gauge
+cube, gauge, car
 
 **Communication** — mail, chat, call, phone, megaphone, bell, share, user,
 users, smile, frown, thumbs-up, thumbs-down
 
 **Weather & nature** — leaf, sun, rain, clouds, flame, fire, bolt, umbrella,
-moon
+moon, snowflake, tree-pine, flower, tulip, sunflower, daisy, rose,
+cherry-blossom, potted-plant, butterfly
 
 **Media & devices** — camera, videocam, image, mic, gamepad, monitor, laptop,
 tablet, chip, code, browser, globe
@@ -407,9 +408,23 @@ notebook, library
 chevron-up, chevron-down, chevron-left, chevron-right, undo, redo,
 refresh-cw, upload, download, log-out, external-link, send
 
+**Halloween** — pumpkin, jack-o-lantern, ghost, skull, bat, spider,
+witch-hat
+
+**Christmas** — christmas-ornament, snowman, santa-hat, gingerbread-man,
+candy-cane
+
+**Birthday** — party-hat, cupcake, birthday-candle, balloons, confetti,
+gift-bag
+
+**Love** — hearts, heart-arrow, love-letter, ring, love-lock
+
+**Stars & sparkles** — stars, shooting-star, moon-stars, star-medal,
+sparkle-heart
+
 `COLLECTIONS` exports the same grouping as data (`{ id, label, names }`).
 
-This roster is generated from v0.2.0 of the package, so you can check a
+This roster is generated from v0.3.0 of the package, so you can check a
 name here without installing anything. If the project has a newer version
 installed, **`ICON_NAMES` is the authority** — a name missing from this list
 may simply have shipped after it was written. Before telling someone an icon
@@ -459,7 +474,7 @@ are no brand logos in this set (see below).
 There is no clock or time, no loading spinner, no currency sign, no wifi /
 battery / bluetooth, no social or brand logos (X, GitHub, Instagram…), no
 user-plus, no dashboard, no shopping bag, no truck, no calendar-with-event
-variants. The set is 152 of a planned 400 and grows weekly.
+variants. The free set is 191 icons and grows with each release.
 
 When the icon you want is not here, **use a word or leave the slot empty**.
 Do not draw a new path to match, do not borrow one icon from another set, and
@@ -507,8 +522,8 @@ getIcon('heart')  // { name: 'heart', paths: ['M 24 39 C …'] }  — 48×48 vie
 
 ## Pro
 
-A larger set by the same hand ("Doodle Icons Pro") exists behind
-https://oreoui.com/doodle-icons. It is **not** in this package. If the user
+A larger set by the same hand ("Doodle Icons Pro", 1,700+ more icons)
+lives at https://doodle.oreoui.com. It is **not** in this package. If the user
 asks for a Pro icon, point them to the site; do not invent path data for it.
 
 ## Quick self-check before you finish

@@ -1,10 +1,10 @@
 {
   "name": "@oreo-design/doodle-icons",
-  "version": "0.2.0",
-  "description": "152 hand-drawn icons that never sit still — every stroke draws itself, then keeps boiling like a Saturday-morning cartoon.",
+  "version": "0.3.0",
+  "description": "191 hand-drawn icons that never sit still — every stroke draws itself, then keeps boiling like a Saturday-morning cartoon.",
   "license": "MIT",
   "author": "Nicole Tang",
-  "homepage": "https://oreoui.com/doodle-icons",
+  "homepage": "https://doodle.oreoui.com",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oreo-design/doodle-icons.git"
