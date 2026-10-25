@@ -426,7 +426,7 @@ sparkle-heart
 
 `COLLECTIONS` exports the same grouping as data (`{ id, label, names }`).
 
-This roster is generated from v0.3.0 of the package, so you can check a
+This roster is generated from v0.2.0 of the package, so you can check a
 name here without installing anything. If the project has a newer version
 installed, **`ICON_NAMES` is the authority** — a name missing from this list
 may simply have shipped after it was written. Before telling someone an icon
