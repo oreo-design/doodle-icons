@@ -284,4 +284,17 @@ export const COLLECTIONS: Collection[] = [
       "paw-print"
     ],
   },
+  {
+    id: "thanksgiving",
+    label: "Thanksgiving",
+    names: [
+      "turkey",
+      "pumpkin-pie",
+      "maple-leaf",
+      "corn",
+      "pie-slice",
+      "falling-leaves",
+      "autumn-tree"
+    ],
+  },
 ]

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 48 48">
+  <style>
+    path {
+      fill: none; stroke: #2b2a33; stroke-width: 3.4;
+      stroke-linecap: round; stroke-linejoin: round;
+      animation-name: draw;
+      animation-timing-function: cubic-bezier(.65,.05,.36,1);
+      animation-fill-mode: backwards;
+    }
+    /* drawn is the resting state; the animation hides the ink and puts it
+       back, so a still render shows the finished icon, not nothing */
+    @keyframes draw {
+      /* hidden only in the from-frame: fill-mode backwards makes that cover the
+         delay, so a staggered row never sits showing the dot a round line-cap
+         paints at dashoffset 1 */
+      from { stroke-dasharray: 1; stroke-dashoffset: 1; visibility: hidden }
+      1% { visibility: visible }
+      to { stroke-dasharray: 1; stroke-dashoffset: 0 }
+    }
+    @media (prefers-reduced-motion: reduce) { path { animation: none } }
+  </style>
+  <filter id="boil" x="-30%" y="-30%" width="160%" height="160%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.055" numOctaves="2" seed="1" result="noise">
+      <animate attributeName="seed" values="1;2;3;4;5;6" dur="0.86s" repeatCount="indefinite" calcMode="discrete"/>
+    </feTurbulence>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <g filter="url(#boil)">
+    <rect width="48" height="48" fill="none"/>
+    <path pathLength="1" style="animation-duration:0.39s;animation-delay:0.00s" d="M 12.2 29.9 C 11.7 29.9, 11.3 29.9, 10.8 29.8 C 10.2 29.6, 9.7 29.2, 9.2 28.7 C 8.9 28.2, 8.8 27.8, 8.7 27.3 C 8.6 26.8, 8.4 26.2, 8.5 25.8 C 8.6 25.2, 8.7 24.8, 8.9 24.3 C 9.2 23.9, 9.7 23.6, 10.1 23.3 C 9.9 23, 9.7 22.5, 9.6 22.1 C 9.5 21.6, 9.5 21.2, 9.5 20.7 C 9.5 20.3, 9.6 19.8, 9.8 19.4 C 10 19.1, 10.3 18.8, 10.6 18.7 C 11 18.4, 11.4 18.2, 11.7 18.1 C 12.2 17.9, 12.6 17.9, 13.1 18.1 C 13 18, 13 18, 13.1 17.9 C 13.1 17.5, 13.2 17.1, 13.5 16.8 C 13.6 16.5, 13.8 16.1, 14 15.8 C 14.4 15.5, 14.7 15.4, 15 15.4 C 15.2 15.2, 15.6 15.2, 15.9 15.2 C 16.3 15, 16.7 15, 17.2 15.2 C 17.5 15.3, 17.7 15.5, 17.9 15.8 C 18.2 16.1, 18.4 16.3, 18.6 16.6 C 18.7 17, 18.8 17.4, 18.8 17.8 C 18.9 17.8, 18.9 17.9, 18.8 17.9 C 19.2 17.9, 19.7 18, 20.1 18.1 C 20.5 18.2, 20.8 18.4, 21.1 18.5 C 21.5 18.8, 21.7 19, 22 19.5 C 22.3 19.9, 22.5 20.3, 22.6 20.8 C 22.6 21.3, 22.5 21.7, 22.3 22.1 C 22.3 22.4, 22.2 22.8, 22 23.2 C 22.3 23.6, 22.6 23.9, 22.7 24.4 C 23 24.8, 23.2 25.2, 23.3 25.7 C 23.4 26.2, 23.3 26.8, 23.2 27.3 C 23 27.8, 22.7 28.3, 22.5 28.7 C 22.2 29.1, 21.7 29.5, 21.3 29.7 C 20.8 29.8, 20.3 29.9, 19.7 29.9 C 17.3 30.2, 14.8 30.1, 12.2 29.9 Z"/>
+    <path pathLength="1" style="animation-duration:0.15s;animation-delay:0.28s" d="M 15.9 29.9 C 15.8 30.9, 15.9 31.8, 16 32.7"/>
+    <path pathLength="1" style="animation-duration:0.21s;animation-delay:0.38s" d="M 30 17.5 C 35.8 18.9, 38.8 16.4, 39.5 10.7 C 33.9 9.6, 30.6 11.7, 30 17.5 Z"/>
+    <path pathLength="1" style="animation-duration:0.15s;animation-delay:0.53s" d="M 29.9 17.5 C 29.1 17.8, 28.5 18.3, 27.8 18.7"/>
+    <path pathLength="1" style="animation-duration:0.20s;animation-delay:0.63s" d="M 30.5 30.3 C 30.9 35.8, 34 38, 39.3 37.5 C 39.2 31.6, 35.7 29.9, 30.5 30.3 Z"/>
+    <path pathLength="1" style="animation-duration:0.15s;animation-delay:0.78s" d="M 30.3 30.1 C 29.9 29.7, 29.3 29.2, 28.6 28.8"/>
+  </g>
+</svg>

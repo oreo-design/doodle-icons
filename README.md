@@ -2,7 +2,7 @@
 
 # Oreo Doodle Icons ✏️
 
-**197 hand-drawn icons that never sit still.**
+**204 hand-drawn icons that never sit still.**
 
 Every stroke draws itself in, then keeps boiling like a Saturday-morning cartoon.
 
@@ -139,7 +139,7 @@ getIcon('heart')  // { name: 'heart', paths: ['M 24 39 C …'] }
 
 ## What's here
 
-- **197 icons**, stroke-only, in a 48×48 grid, drawn with a deliberately
+- **204 icons**, stroke-only, in a 48×48 grid, drawn with a deliberately
   shaky hand. A new batch lands roughly every week
 - **Two SVG builds** — still, and one that draws itself in and boils forever
 - **React components** with tree-shaking, ESM + CJS + types
