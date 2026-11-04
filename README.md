@@ -18,6 +18,19 @@ Every stroke draws itself in, then keeps boiling like a Saturday-morning cartoon
 npm i @oreo-design/doodle-icons
 ```
 
+With shadcn/ui, copy single icons in as source instead — no package, the code
+is yours to edit:
+
+```bash
+npx shadcn@latest add https://doodle.oreoui.com/r/heart.json
+```
+
+That writes `components/ui/doodle-icons/heart.tsx` (`<HeartDoodle />`) and,
+the first time, `components/ui/doodle-icon.tsx` with `DoodleIcon` and
+`BoilFilter`. Mount `<BoilFilter id="boil" />` once and pass `boilId="boil"`
+to each icon. Any free icon name works in place of `heart`; the full list is
+[`r/registry.json`](https://doodle.oreoui.com/r/registry.json).
+
 Or skip the package entirely and grab the SVGs — [`icons/`](icons) for still
 ones, [`icons-animated/`](icons-animated) for ones that draw themselves and
 wiggle forever. They are plain files. They work anywhere an SVG works.
