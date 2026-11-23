@@ -2,15 +2,28 @@
 
 # Oreo Doodle Icons ✏️
 
-**204 hand-drawn icons that never sit still.**
+**204 free hand-drawn icons that never sit still.**
 
 Every stroke draws itself in, then keeps boiling like a Saturday-morning cartoon.
 
-[**Play with them →** doodle.oreoui.com](https://doodle.oreoui.com)
+**MIT · 1,911 in all with [Pro](https://doodle.oreoui.com/?ref=github-readme#pricing)**
+
+[**Play with them →** doodle.oreoui.com](https://doodle.oreoui.com/?ref=github-readme)
 
 ![Oreo Doodle Icons](.github/preview.svg)
 
 </div>
+
+### Free or Pro?
+
+| | Free (this repo) | Pro |
+|---|---|---|
+| Icons | 204 | 1,911 (1,708 more) |
+| Animated + still SVG, React | ✓ | ✓ |
+| License | MIT, commercial use OK | lifetime license, commercial use OK |
+| Price | free forever | $39 for the first 100 orders, then $69 |
+
+[**See every Pro icon →**](https://doodle.oreoui.com/icons?ref=github-readme)
 
 ## Install
 
@@ -204,9 +217,14 @@ Then ask for "hand-drawn icons" and it will do the right thing.
 
 ## Pro
 
-A larger set by the same hand — 1,700+ more icons — is Pro. It lives at
-[doodle.oreoui.com](https://doodle.oreoui.com) — everything in *this* repo
-stays free and MIT forever.
+A larger set by the same hand — 1,708 more icons, 1,911 in all — is Pro:
+arrows, interface, files, weather, animals and every seasonal set, each as
+animated SVG, still SVG and a React component. It is a one-time payment, $39
+for the first 100 orders and $69 after that, with every new batch on the way
+to 2,000 icons included. Browse all of them at
+[doodle.oreoui.com/icons](https://doodle.oreoui.com/icons?ref=github-readme).
+
+Everything in *this* repo stays free and MIT forever.
 
 ## A note on the typeface
 
