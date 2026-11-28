@@ -20,10 +20,18 @@ Every stroke draws itself in, then keeps boiling like a Saturday-morning cartoon
 |---|---|---|
 | Icons | 204 | 1,911 (1,708 more) |
 | Animated + still SVG, React | ✓ | ✓ |
+| Figma file (Static + Wiggle components) | [on Figma Community](https://www.figma.com/community/file/1708433824198347390) | ✓ every icon |
 | License | MIT, commercial use OK | lifetime license, commercial use OK |
 | Price | free forever | $39 for the first 100 orders, then $69 |
 
 [**See every Pro icon →**](https://doodle.oreoui.com/icons?ref=github-readme)
+
+## Figma
+
+The free set is a ready-made Figma file:
+[**Oreo Doodle Icons on Figma Community →**](https://www.figma.com/community/file/1708433824198347390)
+Every icon is a component with a `Static` and a `Wiggle` mode, and the wiggle
+plays right in Figma.
 
 ## Install
 
